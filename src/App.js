@@ -2,14 +2,15 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Homescreen from './screens/Homescreen'
 
 const App = () => {
   return (
     <>
-      <Header/>
-      <main className='py-2' align="center">
+      <Header />
+      <main className='py-4' style={{backgroundColor: "lightblue"}}>
         <Container>
-          <h1>Welcome To BUY-BRAND'S</h1>
+          <Homescreen />
         </Container>
       </main>
       <Footer />
