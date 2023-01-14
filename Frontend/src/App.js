@@ -14,11 +14,11 @@ const App = () => {
         <Container>
          <Routes>
          <Route path="/" element ={< Homescreen />} />
-         <Route path="/product/:id" element = {< ProductScreen />} />
+         <Route path="/product/:_id" element = {< ProductScreen />} />
          </Routes>
         </Container>
       </main>
-      <Footer style={{backgroundColor: "lightblue"}} />
+      <Footer />
     </Router>
   )    
 }

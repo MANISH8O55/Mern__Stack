@@ -1,20 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link , useParams } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import products from '../products'
 
 const ProductScreen = ({ match }) => {
-    const product = products.find((p) => p._id === match.params.id)
+    const params = useParams()
+    const product = products.find(products => products._id === params._id)
 
-  return (
+    return (
     <>
         <Link className= 'btn btn-light  my-3' to='/'>
          GO Back
         </Link>
         <Row>
             <Col>
-             <Image src={product.image} alt={product.name} /> 
+             <Image src={product.image} alt={product.name} fluid /> 
             </Col>
             <Col md={3}>
                 <ListGroup variant='flush'>
@@ -32,7 +33,7 @@ const ProductScreen = ({ match }) => {
                 </ListGroup>
             </Col>
             <Col md={3}>
-              <Card>
+                <Card>
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <Row>
