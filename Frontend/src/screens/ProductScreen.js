@@ -9,13 +9,15 @@ const ProductScreen = ({ match }) => {
     const product = products.find(products => products._id === params._id)
 
     return (
-    <>
-        <Link className= 'btn btn-light  my-3' to='/'>
-         GO Back
+    <Card className='my-3 p-3 rounded'> 
+
+        <Link className= 'btn btn-dark my-3p-3 rounded'  to='/'>
+         <h5 align="center"> GO Back </h5>
         </Link>
-        <Row>
-            <Col>
-             <Image src={product.image} alt={product.name} fluid /> 
+
+        <Row className='my-3 p-3 rounded' >
+            <Col >
+             <Image src={product.image} alt={product.name} fluid  /> 
             </Col>
             <Col md={3}>
                 <ListGroup variant='flush'>
@@ -62,12 +64,13 @@ const ProductScreen = ({ match }) => {
                         </ListGroup.Item>
                     </ListGroup>
                 </Card>
-            </Col>
-        </Row>
+
+            </Col> 
+        </Row>           
+               
+    </Card>
+         
+  )                       
+}       
         
-    </>
-
-  ) 
-}
-
-export default ProductScreen
+export default ProductScreen    
