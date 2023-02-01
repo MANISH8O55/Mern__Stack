@@ -1,6 +1,23 @@
 {
+  "name": "-buy-brand-ss",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manishb055/-BUY-BRAND-S.git"
+  },
+  "author": "MANISH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Manishb055/-BUY-BRAND-S/issues"
+  },
+  "homepage": "https://github.com/Manishb055/-BUY-BRAND-S#readme",
   "dependencies": {
-    "react-router-bootstrap": "^0.26.2",
-    "react-router-dom": "^6.6.1"
+    "express": "^4.18.2"
   }
 }
+
